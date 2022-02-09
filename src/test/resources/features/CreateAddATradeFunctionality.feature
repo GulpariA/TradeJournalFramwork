@@ -5,7 +5,7 @@ Feature: Create Add a Trade Funcationality
   I should not be able to add a trade with invalid Save Funcationality
   I want to be able to back to the Home Page with Back to Transaction Functionality
 
-  @AddTradeFields
+  @AddTradeFieldsValidTest
   Scenario: User should be direct to the Save Trade page
   Given I am on the login page
   And  I enter the "gulpari" into username box and "SuperGulpari123!" password box
@@ -21,5 +21,6 @@ Feature: Create Add a Trade Funcationality
     And I enter a floating point 123.01 number in the entry price box
     Then I enter "09/29/2027" to close date picker
     And  I enter a floating point 125.15 number in the exit price box
+    When I click save button the trade information should be saved
 
 
